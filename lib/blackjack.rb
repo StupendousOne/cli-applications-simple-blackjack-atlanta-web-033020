@@ -49,7 +49,7 @@ def hit?(num)
   
   while !valid_command 
     input = get_user_input
-    
+    binding.pry
     if input == "h" || input == "s"
       then
         new_card = deal_card if input == "h"
