@@ -55,6 +55,7 @@ def hit?(num)
         valid_command = true
       else
         invalid_command
+        prompt_user
     end
   end
   num + new_card
@@ -63,7 +64,6 @@ end
 def invalid_command
   # code invalid_command here
   puts "Please enter a valid command"
-  prompt_user
 end
 
 #####################################################
