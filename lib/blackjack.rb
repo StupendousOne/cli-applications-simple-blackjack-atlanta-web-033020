@@ -44,10 +44,13 @@ def hit?(num)
   # code hit? here
   valid_command = false
   prompt_user
-  input = get_user_input
+  
+  while !valid_command 
+    input = get_user_input
     if input == "h" || input == "s"
       then
         new_card = deal_card if input == "h"
+        valid_command = true
       else
         invalid_command
       
