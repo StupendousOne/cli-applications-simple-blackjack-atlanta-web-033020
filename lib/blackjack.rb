@@ -31,10 +31,12 @@ end
 def initial_round
   # code #initial_round here
   cards = []
+  total = 0
   2.times do
     cards << deal_card
   end
-  display_card_total(cards[0]+cards[1])
+  total = cards[0]+cards[1]
+  display_card_total(total)
   cards
 end
 
