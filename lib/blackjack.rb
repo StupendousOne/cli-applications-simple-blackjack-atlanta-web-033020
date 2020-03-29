@@ -10,12 +10,12 @@ end
 
 def display_card_total(total)
   # code #display_card_total here
-  "Your cards add up to #{total}"
+  puts "Your cards add up to #{total}"
 end
 
 def prompt_user
   # code #prompt_user here
-   "Type 'h' to hit or 's' to stay"
+  puts "Type 'h' to hit or 's' to stay"
 end
 
 def get_user_input
@@ -25,7 +25,7 @@ end
 
 def end_game
   # code #end_game here
-  "Sorry, you hit #{card_total}. Thanks for playing!"
+  puts "Sorry, you hit #{card_total}. Thanks for playing!"
 end
 
 def initial_round
@@ -43,6 +43,7 @@ end
 def hit?(num)
   # code hit? here
   valid_command = false
+  new_card = 0
   prompt_user
   
   while !valid_command 
