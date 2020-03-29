@@ -42,6 +42,7 @@ end
 
 def hit?(num)
   # code hit? here
+  valid_command = false
   prompt_user
   input = get_user_input
   if input == "h" || input == "s"
@@ -54,7 +55,8 @@ end
 
 def invalid_command
   # code invalid_command here
-  
+  puts "Please enter a valid command"
+  prompt_user
 end
 
 #####################################################
