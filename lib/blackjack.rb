@@ -54,7 +54,6 @@ def hit?(num)
         new_card = deal_card if input == "h"
         valid_command = true
       else
-        binding.pry
         invalid_command
     end
   end
@@ -64,7 +63,7 @@ end
 def invalid_command
   # code invalid_command here
   puts "Please enter a valid command"
-  #prompt_user
+  prompt_user
 end
 
 #####################################################
