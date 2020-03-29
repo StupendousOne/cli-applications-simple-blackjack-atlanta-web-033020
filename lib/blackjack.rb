@@ -69,9 +69,14 @@ end
 
 def runner
   # code runner here
-  total
+  game_over = false
   welcome
   total = initial_round
+  
+  while game_over do
+    total = hit?(total)
+    game_over = true if total > 21
+  end
   
   
 end
