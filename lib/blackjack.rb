@@ -1,3 +1,4 @@
+require "pry"
 def welcome
   # code #welcome here
   puts "Welcome to the Blackjack Table"
@@ -48,6 +49,7 @@ def hit?(num)
   
   while !valid_command 
     input = get_user_input
+    
     if input == "h" || input == "s"
       then
         new_card = deal_card if input == "h"
