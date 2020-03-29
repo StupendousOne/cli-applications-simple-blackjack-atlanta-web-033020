@@ -80,6 +80,7 @@ def runner
       game_over = true
     else
       display_card_total(total)
+    end
   end
 end
     
