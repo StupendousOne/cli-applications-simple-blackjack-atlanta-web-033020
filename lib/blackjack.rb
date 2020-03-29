@@ -78,6 +78,7 @@ def runner
   
   while !game_over do
     total = hit?(total)
+    display_card_total(total)
     if total > 21 then
       end_game(total)
       game_over = true
