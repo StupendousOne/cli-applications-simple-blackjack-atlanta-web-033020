@@ -53,7 +53,8 @@ def hit?(num)
         valid_command = true
       else
         invalid_command
-    end  
+    end
+  end
   num + new_card
 end
 
