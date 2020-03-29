@@ -45,11 +45,12 @@ def hit?(num)
   valid_command = false
   prompt_user
   input = get_user_input
-  if input == "h" || input == "s"
-    then
-      new_card = deal_card if input == "h"
-    else
-      invalid_command
+    if input == "h" || input == "s"
+      then
+        new_card = deal_card if input == "h"
+      else
+        invalid_command
+      
   num + new_card
 end
 
